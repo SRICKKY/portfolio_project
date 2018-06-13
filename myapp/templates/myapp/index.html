@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="nav">
+        <div class="contactMe">
+            <a href="#"><img src="{% static 'images/Chat_Blue.png' %}" alt="chat logo">Srikant Portfolio</a>
+        </div>
+        <div class="navIcons">
+            <a href="https://github.com/SRICKKY" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/srickky/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </div>
+
+    <div class="landing">
+        <div class="landingWrapper">
+            <div class="landingL">
+                <h1>Srikant</h1>
+                <p>Hello, my name is Srikant. I'm a Full-stack <br>Developer &amp; <span class="blue">Cricket lover.</span></p>
+                <ul>
+                    <li><p>Full-stack Developer</p></li>
+                    <li><p>Django</p></li>
+                    <li><p>LAMP stack</p></li>
+                    <li><p>Back-end Developer</p></li>
+                </ul>
+            </div>
+            <div class="landingR">
+                <img class="profile_image" src="{% static 'images/srikant.jpg' %}" alt="srikant pic" width="300px">
+                <p class="center">
+                    <i class="fas fa-envelope fa-1x"></i>&nbsp; kumar_srikant@outlook.com <br><br>
+                    <i class="fas fa-mobile-alt fa-1x"></i>&nbsp; 9583568320&nbsp;/&nbsp;7979880265 <br><br>
+                    <i class="fas fa-file fa-1x"></i>&nbsp;<a class="remove_underline" href="https://drive.google.com/file/d/1K13YlWiclRNNPf8XDvEID4QWTx5Ih995/view?usp=sharing" target="_blank">&nbsp;Resume</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <img src="{% static 'images/Scroll.png' %}" alt="scroll down" class="scroll">
+    <div class="skills">
+        <h2>Skills</h2>
+        <p>With 1 year of self-experience using <br>these programs.</p>
+        <div class="programs">
+            <img src="{% static 'images/django.png' %}" alt="django icon">
+            <img src="{% static 'images/js.png' %}" alt="js icon">
+            <img src="{% static 'images/php.png' %}" alt="php icon">
+            <img src="{% static 'images/python.png' %}" alt="python icon">
+        </div>
+    </div>
+
+    <img src="{% static 'images/Scroll.png' %}" alt="scroll down" class="scroll">
+    <div class="work clearfix">
+        <div class="workText">
+            <h1>Budget Project</h1>
+            <a href="https://github.com/SRICKKY/budgetproject" target="_blank"><h5>View Project</h5></a>
+            <div class="underline"></div>
+            <img src="{% static 'images/Scroll.png' %}" alt="scroll down" class="scroll">
+        </div>
+        <img src="{% static 'images/project-1.jpg' %}" alt="project image" class="workImg">
+    </div>
+
+    <div class="work2 clearfix">
+        <div class="workText">
+            <h1>Calendar App</h1>
+            <a href="https://github.com/SRICKKY/CalendarApp" target="_blank"><h5>View Project</h5></a>
+            <div class="underline"></div>
+            <img src="{% static 'images/Scroll.png' %}" alt="scroll down" class="scroll">
+        </div>
+        <img src="{% static 'images/project-2.jpg' %}" alt="project image" class="workImg">
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/SRICKKY?tab=repositories" target="_blank"><h3 class="blue">More on Github</h3></a>
+        <div class="underlineSmall"></div>
+    </div>
+
+
+</body>
+</html>
